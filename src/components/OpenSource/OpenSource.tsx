@@ -1,6 +1,6 @@
 import { Heading, Text, VStack } from "@chakra-ui/react";
 import OpenSourceCard from "./OpenSourceCard";
-import data from "../../Data/openSourceData";
+import data from "../../../Data/openSourceData";
 
 const OpenSource = () => {
   const repoCards = data.map((data, idx) => {

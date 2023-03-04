@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { NextPage } from "next";
-import HeroContainerOpenSource from "../components/OpenSource/HeroContainerOpenSource";
+import HeroContainerOpenSource from "../src/components/OpenSource/HeroContainerOpenSource";
 
 const OpenSource: NextPage = () => {
   return (

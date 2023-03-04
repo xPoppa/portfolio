@@ -3,7 +3,6 @@ import {
   Flex,
   HStack,
   Image,
-  Spacer,
   IconButton,
   useColorMode,
 } from "@chakra-ui/react";
@@ -34,15 +33,18 @@ const Navbar = () => {
           lg: "flex",
           xl: "flex",
         }}
+        justify="space-between"
       >
         <HStack h="16" align="center" justify={"center"}>
           <Image
-            alt="oops no image"
+            alt="profile-picture"
             src="Me.svg"
             w="65px"
             h="65px"
             borderRadius={"31em"}
           ></Image>
+        </HStack>
+        <HStack>
           <NextLink href="/" passHref>
             <Button
               as="a"
@@ -77,7 +79,6 @@ const Navbar = () => {
 					</Button>
 				</NextLink> */}
         </HStack>
-        <Spacer />
         <IconButton
           aria-label="colorMode-button"
           onClick={toggleColorMode}
@@ -112,10 +113,12 @@ const Navbar = () => {
         <IconButton
           mt={2}
           mr={2}
+          mb={8}
           aria-label="Open Menu"
-          size="lg"
+          size="sm"
           icon={<CloseIcon />}
           onClick={() => setDisplay("none")}
+          alignSelf={"flex-end"}
         />
         <NextLink href="/" passHref>
           <Button

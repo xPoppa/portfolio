@@ -1,6 +1,6 @@
 import { Heading, VStack } from "@chakra-ui/react";
 import CareerCard from "./CareerCard";
-import data from "../../Data/careerData";
+import data from "../../../Data/careerData";
 
 const Career = () => {
   const _CareerCards = data.map((project, idx) => {

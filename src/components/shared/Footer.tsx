@@ -6,7 +6,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import data from "../../Data/socialLinkData";
+import data from "../../../Data/socialLinkData";
 
 const Footer = () => {
   const iconProps = {

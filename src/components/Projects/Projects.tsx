@@ -1,5 +1,5 @@
 import { Heading, Text, VStack } from "@chakra-ui/react";
-import data from "../../Data/careerData";
+import data from "../../../Data/careerData";
 import ProjectCard from "./ProjectsCard";
 
 const Projects = () => {
