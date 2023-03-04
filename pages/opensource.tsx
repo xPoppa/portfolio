@@ -3,11 +3,11 @@ import { NextPage } from "next";
 import HeroContainerOpenSource from "../components/OpenSource/HeroContainerOpenSource";
 
 const OpenSource: NextPage = () => {
-	return (
-		<Flex justify="center">
-			<HeroContainerOpenSource />
-		</Flex>
-	);
+  return (
+    <Flex justify="center">
+      <HeroContainerOpenSource />
+    </Flex>
+  );
 };
 
 export default OpenSource;
