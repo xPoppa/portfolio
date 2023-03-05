@@ -17,7 +17,7 @@ const IconProps = {
   isRound: true,
 };
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
   const [display, setDisplay] = useState("none");
   const { colorMode, toggleColorMode } = useColorMode();
   return (
@@ -93,7 +93,7 @@ const Navbar = () => {
         size="lg"
         mr={2}
         icon={<HamburgerIcon />}
-        onClick={() => setDisplay("flex")}
+        onClick={(): void => setDisplay("flex")}
         display={{
           base: "flex",
           sm: "none",
@@ -117,7 +117,7 @@ const Navbar = () => {
           aria-label="Open Menu"
           size="sm"
           icon={<CloseIcon />}
-          onClick={() => setDisplay("none")}
+          onClick={(): void => setDisplay("none")}
           alignSelf={"flex-end"}
         />
         <NextLink href="/" passHref>
