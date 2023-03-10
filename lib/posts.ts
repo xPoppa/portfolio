@@ -50,8 +50,6 @@ export async function getPostData(id: string): Promise<FileIds> {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  console.log("MatterResult Torie", matterResult);
-
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
