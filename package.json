@@ -16,14 +16,18 @@
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.2.3",
+    "date-fns": "^2.29.3",
     "framer-motion": "^6",
+    "gray-matter": "^4.0.3",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
-    "@types/node": "18.7.14",
+    "@types/node": "^18.14.6",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.54.0",

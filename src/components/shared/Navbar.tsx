@@ -1,8 +1,8 @@
 import {
+  Box,
   Button,
   Flex,
   HStack,
-  Image,
   IconButton,
   useColorMode,
 } from "@chakra-ui/react";
@@ -10,6 +10,7 @@ import NextLink from "next/link";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import Image from "next/image";
 
 const IconProps = {
   variant: "ghost",
@@ -36,13 +37,19 @@ const Navbar = (): JSX.Element => {
         justify="space-between"
       >
         <HStack h="16" align="center" justify={"center"}>
-          <Image
-            alt="profile-picture"
-            src="Me.svg"
+          <Box
+            borderRadius="50%"
+            overflow={"hidden"}
             w="65px"
             h="65px"
-            borderRadius={"31em"}
-          ></Image>
+          >
+            <Image
+              alt="profile-picture"
+              src="/Me.svg"
+              width="65px"
+              height="65px"
+            ></Image>
+          </Box>
         </HStack>
         <HStack>
           <NextLink href="/" passHref>
@@ -78,6 +85,17 @@ const Navbar = (): JSX.Element => {
 						Projects
 					</Button>
 				</NextLink> */}
+          <NextLink href={"/blog"}>
+            <Button
+              as="a"
+              aria-label="blog"
+              variant={"ghost"}
+              fontSize="1em"
+              fontWeight={100}
+            >
+              Blog
+            </Button>
+          </NextLink>
         </HStack>
         <IconButton
           aria-label="colorMode-button"

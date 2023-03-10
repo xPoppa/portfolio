@@ -23,7 +23,7 @@ interface Props {
   website: string;
 }
 
-const OpenSourceCard = (props: Props) => {
+const OpenSourceCard = (props: Props): JSX.Element => {
   const [stars, setStars] = useState(0);
   const [forks, setForks] = useState(0);
 
@@ -36,7 +36,7 @@ const OpenSourceCard = (props: Props) => {
   });
 
   useEffect(() => {
-    const getStarsForks = async () => {
+    const getStarsForks = async (): Promise<void> => {
       const response = await fetch(
         `https://api.github.com/repos/xPoppa/${props.repoName}` //portfolio is prop
       );
