@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import data from "../../../Data/socialLinkData";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const iconProps = {
     variant: "ghost",
     size: "md",

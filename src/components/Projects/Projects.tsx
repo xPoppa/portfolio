@@ -2,7 +2,7 @@ import { Heading, Text, VStack } from "@chakra-ui/react";
 import data from "../../../Data/careerData";
 import ProjectCard from "./ProjectsCard";
 
-const Projects = () => {
+const Projects = (): JSX.Element => {
   const _ProjectsCards = data.map((_, idx) => {
     return <ProjectCard key={idx + 20} />;
   });

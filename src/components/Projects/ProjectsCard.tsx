@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 
-const ProjectCard = () => {
+const ProjectCard = (): JSX.Element => {
   return <Flex></Flex>;
 };
 

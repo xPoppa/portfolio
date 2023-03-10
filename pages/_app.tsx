@@ -17,7 +17,7 @@ const config = {
 
 const theme = extendTheme({ breakpoints, config });
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Layout>

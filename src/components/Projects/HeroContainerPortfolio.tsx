@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 
-const HeroContainerPortfolio = () => {
+const HeroContainerPortfolio = (): JSX.Element => {
   return <Flex></Flex>;
 };
 

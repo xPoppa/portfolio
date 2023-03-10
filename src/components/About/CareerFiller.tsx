@@ -7,7 +7,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-const CareerFiller = () => {
+const CareerFiller = (): JSX.Element => {
   return (
     <HStack
       align="start"

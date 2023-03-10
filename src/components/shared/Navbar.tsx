@@ -85,7 +85,7 @@ const Navbar = (): JSX.Element => {
 						Projects
 					</Button>
 				</NextLink> */}
-          <NextLink href={"/blog"}>
+          <NextLink href={"/blog"} passHref>
             <Button
               as="a"
               aria-label="blog"

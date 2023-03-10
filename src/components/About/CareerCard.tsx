@@ -15,7 +15,7 @@ interface Props {
   picture: string;
 }
 
-const CareerCard = (props: Props) => {
+const CareerCard = (props: Props): JSX.Element => {
   const techStack = props.techStack.map((tech, idx) => {
     return <Text key={idx + 200}>{tech}</Text>;
   });

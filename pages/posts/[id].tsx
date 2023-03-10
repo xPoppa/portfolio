@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { FileNames, Params, StatProps } from "../../shared/types";
 import Head from "next/head";
@@ -7,7 +7,7 @@ import Date from "../../src/components/shared/Date";
 
 const Post = ({ postData }: Params): JSX.Element => {
   return (
-    <VStack>
+    <VStack align={"center"}>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -15,7 +15,9 @@ const Post = ({ postData }: Params): JSX.Element => {
       <Box color={"#D3D3D3"}>
         <Date dateString={postData.date} />
       </Box>
-      <Box
+      <Flex
+        align={"center"}
+        direction="column"
         w={"60vw"}
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />

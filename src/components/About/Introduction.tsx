@@ -1,6 +1,6 @@
 import { Heading, Text, VStack } from "@chakra-ui/react";
 
-const Introduction = () => {
+const Introduction = (): JSX.Element => {
   return (
     <VStack align="start" w={{ base: "70vw", lg: "44em" }}>
       <Heading>{"Hi, I'm Romano"}</Heading>

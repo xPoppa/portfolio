@@ -1,7 +1,7 @@
 import { VStack } from "@chakra-ui/react";
 import OpenSource from "./OpenSource";
 
-const HeroContainerOpenSource = () => {
+const HeroContainerOpenSource = (): JSX.Element => {
   return (
     <VStack justify={"center"} spacing="3em">
       <OpenSource />

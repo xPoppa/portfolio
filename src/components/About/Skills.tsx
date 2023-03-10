@@ -1,6 +1,6 @@
 import { Heading, Text, VStack } from "@chakra-ui/react";
 
-const Skills = () => {
+const Skills = (): JSX.Element => {
   return (
     <VStack align="start" w={{ base: "70vw", lg: "700px" }}>
       <Heading>Skills</Heading>
